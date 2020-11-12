@@ -1,0 +1,19 @@
+#paineis-sobre{
+  margin-top: 20px;
+}
+
+.radio {
+  width: 50%;
+  display: inline-block;
+}
+
+.contato-select {
+ width: 50%;
+ display: inline-block;
+ vertical-align: middle;
+ border: 2px solid red;
+}
+
+body{
+  background-color: red;
+}

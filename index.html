@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Prontuário</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="novo.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav class="navbar navbar-default">
+        <div>
+          
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <!-- <img alt="logo" src="doutora.jpg" id="logo-img"> -->
+            </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#registro">Registrar</a></li>
+              <li><a href="#acompanhamento">Acompanhamento</a></li>  
+            </ul>
+          </div> 
+        </div>
+      </nav>
+    </header>
+
+    <!-- <div id="paineis-sobre" class="panel-group">  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" data-toggle="collapse" data-target="#primeiro-paragrafo" data-parent="#paineis-sobre">Registro</h3>
+      </div>
+      
+      <div id="primeiro-paragrafo" class="collapse out">
+        <div class="panel-body">
+          <p >Clique aqui para registrar informações do paciente</p>
+        </div>
+      </div> 
+    </div> 
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" data-toggle="collapse" data-target="#segundo-paragrafo" data-parent="#paineis-sobre">Acompanhamento</h3>
+      </div>
+      <div id="segundo-paragrafo" class="collapse out">
+        <div class="panel-body">
+          <p>A TopCasa Fina Arquitetura está no mercado desde... </p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div> -->
+
+    <div id="registro">
+      <h2>Registro</h2>
+      <form id="form-adiciona">
+        <div class="form-group">
+          <label for="data">Data</label>
+          <input id="data1" type="datetime-local" name="data">
+        </div>
+        
+        <div class="form-group">
+          <label for="temperatura">Temperatura</label>
+          <input id="temperatura1" type="number" name="temperatura" placeholder="36,5º">
+        </div>
+        
+        <div class="form-group">
+          <label for="oxigenacao">Oxigenação</label>
+          <input id="oxigenacao" type="number" name="oxigenacao">
+        </div>  
+        
+        <div class="form-group">
+          <label for="pressao">Pressão arterial</label>
+          <input id="pressao" type="number" name="pressao">
+        </div>  
+        
+        <div class="form-group">
+          <label for="troca">Troca da fralda</label>
+          <input id="troca" type="text" name="troca">
+        </div>
+        
+        <div class="form-group">
+          <label for="traqueo">Traqueostomia</label>
+          <input id="traqueo" type="text" name="traqueo">
+        </div>
+        
+        <div class="form-group">
+          <label for="fono">Parecer fono</label>
+          <textarea id="fono" class="form-control" rows="3"></textarea>
+        </div> 
+        
+        <div class="form-group">
+          <label for="fisio">Parecer fisio</label>
+          <textarea id="fisio" class="form-control" rows="3"></textarea>
+        </div>
+        
+        <label> Hoje nosso humor está:</label>
+        
+        <div class="container">
+          <div class="radio grupo-radio">
+            <input type="radio" name="tipohumor">
+            Feliz
+          </div>
+          <div class="radio grupo-radio"> 
+            <input type="radio" name="tipohumor">
+            Triste
+          </div>
+        </div>
+        
+        <select class="contato-select form-control" name="responsavelRegistro">
+          <option value="" disabled selected>Responsável</option>
+          <option value="andria">Andria</option>
+          <option value="carla" >Carla</option>
+          <option value="natany" >Natany</option>
+          <option value="paola" >Paola</option>
+          <option value="tuanny">Tuanny</option>
+          
+        </select>
+        
+        <button id="registra-info" class="btn btn-primary" type="submit">Registrar</button>
+      </form>
+    </div>
+
+    <!-- <div id="acompanhamento" class="container"> -->
+      <h2>Acompanhamento</h2>
+      <table id="table-info" class="table table-bordered table-striped table-responsive">
+        <thead>
+          <th>Data</th>
+          <th>Temperatura</th>
+          <th>Oxg</th>
+          <th>Pressão</th>
+          <th>Troca</th>
+          <th>Traqueostomia</th>
+          <th>Parecer fono</th>
+          <th>Parecer fisio</th>
+          <th>Humor</th>
+          <th>Responsável</th>  
+        </thead>
+      <tbody id="table-info-body">
+
+      </tbody>
+
+        </table>
+      
+      
+    <!-- </div> -->
+
+
+    <footer>
+      <div>
+        <address>
+          <strong> Karla Natany Gonçalves Bolzoni</strong><br>
+          Guaiba/RS<br>
+          Tel: (51)98185-6286
+        </address>
+        
+        <address>
+          Email: karla_natany_@hotmail.com
+        </address>
+      </div>
+    </footer>
+  </div>
+
+  <script src="jquery.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="acompanhamento.js"></script>
+</body>
+
+</html>
