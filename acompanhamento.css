@@ -10,3 +10,9 @@ th{
   background-color: gray;
   color: white;
 }
+
+.info-atencao {
+  color: "blue";
+  font-weight: bold;
+
+}

@@ -20,3 +20,13 @@ footer {
   padding: 20px;
   margin: 20px;
 }
+
+#logo-img{
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+
+.caixa{
+  position: relative;
+}

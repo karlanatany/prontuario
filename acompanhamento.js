@@ -6,11 +6,54 @@ botaoRegistrar.addEventListener("click",function(event){
 
   var registro = obtemInfoFormulario(form);
 
+  // MONTA TR E TD
+  var registroTr = montaTr(registro);  
+
+  var tabela = document.querySelector("#table-info-body");
+
+  tabela.appendChild(registroTr);
+
+  
+  
+  if (registro.temperatura > 37) {
+    console.log("atenção")
+    temperaturaTd.classList.add("danger");
+  }
+
+  if (registro.oxigenacao < 92){
+    console.log("atenção");
+    oxigenacaoTd.classList.add("danger");
+  }
+
+  form.reset()
+});
+
+
+function obtemInfoFormulario (form) {
+  var registro = {
+  
+    data: form.data.value,
+    temperatura: form.temperatura.value,
+    oxigenacao: form.oxigenacao.value,
+    pressao: form.pressao.value,
+    troca: form.troca.value,
+    traqueo: form.traqueo.value,
+    parecerFono: form.fono.value,
+    parecerFisio: form.fisio.value,
+    humor: form.tipohumor.value,
+    responsavel: form.responsavelRegistro.value
+  }
+
+  return registro;
+}
+
+
+function montaTr (registro) {
   var registroTr = document.createElement("tr");
 
-  var dataTd = document.createElement ("td");
-  var temperaturaTd = document.createElement ("td");
-  var oxigenacaoTd = document.createElement ("td");
+  var dataTd = document.createElement("td");
+  var temperaturaTd = document.createElement("td");
+  var oxigenacaoTd = document.createElement("td");
   var pressaoTd = document.createElement("td");
   var trocaTd = document.createElement("td");
   var traqueoTd = document.createElement("td");
@@ -42,36 +85,5 @@ botaoRegistrar.addEventListener("click",function(event){
   registroTr.appendChild(responsavelTd);
 
 
-  var tabela = document.querySelector("#table-info-body");
-
-  tabela.appendChild(registroTr);
-
-  form.reset()
-  
-  if (registro.temperatura < 37) {
-    console.log("temperatura boa")
-  }
-
-});
-
-function obtemInfoFormulario (form){
-  var registro = {
-  
-    data: form.data.value,
-    temperatura: form.temperatura.value,
-    oxigenacao: form.oxigenacao.value,
-    pressao: form.pressao.value,
-    troca: form.troca.value,
-    traqueo: form.traqueo.value,
-    parecerFono: form.fono.value,
-    parecerFisio: form.fisio.value,
-    humor: form.tipohumor.value,
-    responsavel: form.responsavelRegistro.value
-  }
-
-  return registro;
-}
-
-if(registro.temperatura < 37){
-  console.log("temperatura boa")
+  return registroTr;
 }

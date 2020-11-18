@@ -1,42 +1,74 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Acompanhamento</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="novo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar navbar-default">
+          <div>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+                aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Registrar</a></li>
+                <li><a href="acompanhamento.html">Acompanhamento</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="acompanhamento.css">
+      <body>
+        <div id="acompanhamento">
+          <h2>Acompanhamento</h2>
+          <table id="table-info" class="table table-bordered table-striped table-responsive">
+            <thead>
+              <th>Data</th>
+              <th>Temperatura</th>
+              <th>Oxg</th>
+              <th>Pressão</th>
+              <th>Troca</th>
+              <th>Traqueostomia</th>
+              <th>Parecer fono</th>
+              <th>Parecer fisio</th>
+              <th>Humor</th>
+              <th>Responsável</th>
+            </thead>
+            <tbody id="table-info-body"> </tbody>
+          </table>          
+            
+      <footer>
+        <div>
+          <address>
+            <strong> Karla Natany Gonçalves Bolzoni</strong><br>
+            Guaiba/RS<br>
+            Tel: (51)98185-6286
+          </address>
 
-</head>
+          <address>
+            Email: karla_natany_@hotmail.com
+          </address>
+        </div>
+      </footer>
 
-<body>
-<table>
-  <thead>
-    <tr>
-      <th>Data/hora</th>
-      <th>Temperatura</th>
-      <th>Pressão</th>
-      <th>Oxigenação</th>
-      <th>Troca</th>
-      <th>Sessão fono</th>
-      <th>Sessão fisio</th>
-      <th>Comportamento</th>
-      <th>Medicação</th>
-      <th>Alimentação</th>
-      <th>Dor</th>
-      <th>Responsável</th>
-    </tr>
-  </thead>
-  <tr>
-    <td>12/10/2020 19:36</td>
-    <td>36,5</td>
-    <td>12,8</td>
-    <td>97%</td>
-    <td>Xixi</td>
-    <td>não teve</td>
-    <td>Teste corante azul</td>
-    <td>agitada</td>
-    <td> - </td>
-    <td>dieta sonda</td>
-    <td> costass </td>
-    <td>Natany</td>
-  </tr>
-</table>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="acompanhamento.js"></script>
+  </body>
+</html>
