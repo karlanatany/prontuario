@@ -30,3 +30,15 @@ footer {
 .caixa{
   position: relative;
 }
+
+.img-nos {
+  width: 60%;
+  height: 350px;
+}
+
+#texto { 
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+}

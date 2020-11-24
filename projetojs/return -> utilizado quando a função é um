@@ -1,0 +1,9 @@
+return -> utilizado quando a função é uma etapada intermediária
+em um cálculo de algum tipo, assim este valor (calculado e retornado) será usado na etapa seguinte. 
+
+replace() -> substitui strings, passando dois parametros;
+VALORES RETOMADOS POR FUNÇÕES??
+
+// classe possui a estrutura de coisas; definidas por atributos. FUnções ou métodos podem ser 
+// incluidas nas classes para possuir comportamentos que são representadas 
+// por parenteses;
