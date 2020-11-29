@@ -34,6 +34,12 @@ footer {
 .img-nos {
   width: 60%;
   height: 350px;
+  transition: 400ms;
+  box-shadow: 10px 10px 30px #000000;
+}
+
+.img-nos:hover {
+  opacity: 0.5;
 }
 
 #texto { 
